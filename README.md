@@ -3,7 +3,7 @@
 Script and harnesses to benchmark speed of different Nexus file parsers. 
 
 > Quick results overview:  
->  `nexwick` < `cyanea` < `phylo-nexus` < `ncl` < `ape` < `BEAST2` < `DendroPy` < `Biopython`
+>  `nexwick` < `cyanea` < `phylo-nexus` < `ncl` < `ape` < `BEAST2` < `commonnexus` < `DendroPy` < `Biopython`
 
 ## Parsers
 
@@ -45,6 +45,7 @@ then run `cargo build --release`.
 	- Supports lazy and eager modes
 - `Biopython` [website](https://biopython.org/) 
 	- Failed to parse some other files, but mostly worked
+- `commonnexus` [website](https://pypi.org/project/commonnexus/)
 - [ignored - failing] `ete3`
 	- Failed to parse valid files
 
@@ -105,9 +106,10 @@ Difference were most prominent on `aars.gradual.trees`, with the smallest differ
 4. `ncl`: 3.32 - 5.42
 5. `ape`: 8.55 - 14.63
 6. `BEAST2`: 11.06 - 22.72
-7. `DendroPy` (lazy): 43.99 - 118.31
-7. `DendroPy` (eager): 52.70 - 150.13
-8. `Biopython`: 82.96 - 110.31
+7. `commonnexus`: 28.05 - 41.95
+8. `DendroPy` (lazy): 43.99 - 118.31
+9. `DendroPy` (eager): 52.70 - 150.13
+10. `Biopython`: 82.96 - 110.31
 
 ![Relative peformance per dataset (bar plot)](plots/relative_grouped.png?raw=true)
 ![Relative peformance per dataset (heat map)](plots/relative_heatmap.png?raw=true)

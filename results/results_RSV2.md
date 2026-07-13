@@ -7,6 +7,7 @@
 | `harness-cpp\ncl_harness.exe data/RSV2-n129-10k.trees --nexus` | 1821.8 ± 7.1 | 1813.7 | 1836.9 | 3.70 ± 0.03 |
 | `Rscript harness-R\parse_ape.R data/RSV2-n129-10k.trees --nexus` | 4524.4 ± 41.3 | 4481.5 | 4610.6 | 9.19 ± 0.11 |
 | `java -cp harness-java;D:/Projects/Phylo/BEAST/lib/packages/*;D:/Projects/Phylo/BEAST/lib/* Beast2Harness data/RSV2-n129-10k.trees --nexus` | 5446.2 ± 250.6 | 4759.9 | 5625.7 | 11.06 ± 0.51 |
+| `python harness-python\parse_commonnexus.py data/RSV2-n129-10k.trees --nexus` | 15819.1 ± 164.5 | 15709.4 | 16265.5 | 32.01 ± 1.67 |
 | `python harness-python\parse_dendropy_lazy.py data/RSV2-n129-10k.trees --nexus` | 22034.9 ± 280.6 | 21836.8 | 22755.8 | 44.76 ± 0.65 |
 | `python harness-python\parse_dendropy.py data/RSV2-n129-10k.trees --nexus` | 30660.5 ± 15563.5 | 25208.9 | 74942.0 | 62.28 ± 31.62 |
 | `python harness-python\parse_biopython.py data/RSV2-n129-10k.trees --nexus` | | 42964.7 ± 1200.5 | 41091.9 | 45245.1 | 87.01 ± 3.49 |

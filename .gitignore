@@ -1,1 +1,3 @@
 /data
+/harness-rust/target
+/harness-rust/Cargo.lock

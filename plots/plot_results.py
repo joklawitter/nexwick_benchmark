@@ -49,6 +49,7 @@ PARSER_ORDER = [
     "ncl",
     "ape",
     "BEAST2",
+    "commonnexus",
     "DendroPy (lazy)",
     "DendroPy (eager)",
     "Biopython",
@@ -70,6 +71,8 @@ def classify_command(command: str) -> str:
         return "ape"
     if "beast2harness" in c:
         return "BEAST2"
+    if "commonnexus" in c:
+        return "commonnexus"
     if "dendropy_lazy" in c:
         return "DendroPy (lazy)"
     if "dendropy" in c:  # plain dendropy harness == eager mode
