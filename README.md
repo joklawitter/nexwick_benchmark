@@ -112,4 +112,4 @@ Difference were most prominent on `aars.gradual.trees`, with the smallest differ
 ![Relative peformance per dataset (bar plot)](plots/relative_grouped.png?raw=true)
 ![Relative peformance per dataset (heat map)](plots/relative_heatmap.png?raw=true)
 
-For full result tables see `/results`
+For full result tables see `/results`.
