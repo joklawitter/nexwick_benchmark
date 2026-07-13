@@ -1,0 +1,25 @@
+[package]
+
+name = "harness-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Published crate — https://crates.io/crates/nexwick
+nexwick = "0.1"
+# https://crates.io/crates/cyanea-phylo
+cyanea-phylo = "0.1"
+
+# phylo-nexus (by Tobia Ochsner): upstream builds a pyo3 cdylib with no rlib,
+# so it CANNOT be used as a Rust dependency as-is. This points at a local
+# checkout patched to build an rlib. See README — needs manual fixing to build
+# on another machine (fork it and add "rlib" to crate-type, then repoint here).
+phylo-nexus = { path = "../../tochsner/phylo-nexus", package = "nexus" }
+
+[workspace]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+debug = false
