@@ -109,4 +109,7 @@ Difference were most prominent on `aars.gradual.trees`, with the smallest differ
 7. `DendroPy` (eager): 52.70 - 150.13
 8. `Biopython`: 82.96 - 110.31
 
-For full results see `/results`
+![Relative peformance per dataset (bar plot)](plots/relative_grouped.png?raw=true)
+![Relative peformance per dataset (heat map)](plots/relative_heatmap.png?raw=true)
+
+For full result tables see `/results`
